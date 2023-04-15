@@ -2,7 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: cursive;
+  
   
 }
 /* Navbar */
@@ -58,6 +58,7 @@ span {
   border: solid 2px rgb(13, 8, 0);
   border-radius: 15px;
   padding: 5px;
+  font-family: cursive;
 }
 .navlist a:hover {
   color: burlywood;
@@ -95,6 +96,7 @@ section {
   font-weight: 800;
   font-size: 25px;
   letter-spacing: 5px;
+  font-family: cursive;
 }
 .one {
   color: rebeccapurple;
@@ -121,7 +123,6 @@ section {
   display: inline-block;
   padding: 5px;
   margin-top: 10px;
-
   background-color: rgba(255, 68, 0, 0.886);
   font-size: 30px;
   text-decoration: none;
@@ -171,6 +172,7 @@ section {
   gap: 1.5rem;
   background:linear-gradient(rgba(255, 255, 255, 0.75),rgba(0, 170, 255, 0.758));
   height: 100vh;
+  
 }
 .about_img {
   margin: auto;
@@ -191,12 +193,18 @@ section {
   margin: auto;
   font-size: 0.7cm;
 }
+.about_text h2{
+  font-family: cursive;
+  color: tomato;
+  font-size: 2cm;
+}
 
 /* skill */
 .skill {
   text-align: center;
   margin-bottom: 30px;
   background:linear-gradient(rgba(255, 255, 255, 0.75),rgba(0, 170, 255, 0.758));
+
 }
 .skill1{
   margin-right: 10%;
@@ -207,6 +215,7 @@ section {
   color: coral;
   font-weight: 800;
   margin-bottom: 30px;
+  font-family: cursive;
 }
 .progress-container {
   margin-bottom: 30px;
@@ -236,9 +245,11 @@ section {
 }
 .my_services {
   font-size: 1cm;
+  font-family: cursive;
 }
 .my_services h1 .services_head {
   font-size: 1.5cm;
+
 }
 .services-content {
   display: grid;
@@ -299,6 +310,7 @@ section {
   text-align: center;
   font-size: 80px;
   margin-bottom: 20px;
+  font-family: cursive;
 }
 .gellery_text h2{
   color: rgb(100, 0, 120);
@@ -480,7 +492,6 @@ padding-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-
   position: relative;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -594,8 +605,25 @@ footer{
   }
 }
 @media (max-width: 1080px) {
+  .logo {
+    color: brown;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: chartreuse;
+    display: flex;
+  }
+  .logo span{
+    font-size: 15px;
+    font-weight: 600;
+  }
   .menu-icon{
     display: block;
+    font-size: 15px;
   }
   .navlist{
     position: absolute;
@@ -644,7 +672,32 @@ footer{
     width: 200px;
     height: 150px;
   }
-
+  .button {
+  display: contents;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  .btn {
+    padding: 5px;
+    margin-top: 10px;
+    background-color: rgba(255, 68, 0, 0.886);
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+  }
+  
+  .btn2{
+    padding: 2.5px;
+    margin-top: 5px;
+    background-color: rgba(255, 68, 0, 0.886);
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+  }
 }
 
 @media (max-width: 1080px){
@@ -652,26 +705,121 @@ footer{
     height: fit-content;
   }
     .about_text h2 {
-      font-size: 10px;
+      font-size: 20px;
       font-weight: 800;
     }
     .about_text p{
       font-size: 8px;
       font-weight: 400;
     }
-    .btn{
-      display: inline-block;
-      padding: 2.5px;
-      margin-top: 5px;
-      background-color: rgba(255, 68, 0, 0.886);
-      font-size: 10px;
-      text-decoration: none;
-      border-radius: 10px;
-      color: white;
-    }
+  
   .about_img img{
     width: 200px;
       height: 150px;
+  }
+}
+
+
+@media (max-width: 1080px){
+
+  .gellery-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-top: 5px;
+  }
+
+  .gellery2-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-top: 5px;
+  }
+
+  .layer2 h5{
+    font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color:rgb(0, 255, 242);
+  }
+
+  .layer2 p{
+    color: #ffffff;
+    font-size: 8px;
+    line-height:1 ;
+    font-weight: 200;
+    width: fit-content;
+  }
+  .layer2 i{
+    color: green;
+    margin-top: 20px;
+    font-size: 10px;
+    background: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .contact_head{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size:40px;
+    margin-bottom: 20px;
+  }
+ 
+
+.contact_body1 h2{
+  line-height: 1;
+  font-size:15px;
+}
+.contact_body1 p{
+font-size: 13px ;
+font-style: italic;
+margin-top: 10px;
+}
+
+.contact_icon i{
+  height: 30px;
+  width: 30px;
+  background-color: tomato;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #000000;
+  margin-right: 10px;
+  transition: all .45s ease;
+  }
+
+  .contact_form form{
+   margin-top: 50px;
+
+  }
+
+  .contact_form form input,form textarea{
+    width: 90%;
+    height: 50%;
+    margin-top: 5px;
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  footer{
+    text-align: center;
+    font-size: .5cm;
+    font-weight: 800;
+    margin-top: 1cm;
+    background-color: rgba(255, 255, 255, 0.469);
+    color: #333;
+    width: 100%;
   }
 }
 
